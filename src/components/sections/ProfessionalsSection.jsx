@@ -188,9 +188,9 @@ const ProfessionalsSection = () => {
               </div>
 
               {/* Avatar Badge */}
-              <div className="absolute -bottom-2 -right-2 z-20 flex h-[44px] w-[44px] items-center justify-center rounded-full border-2 border-white bg-[#E91E8C] text-white shadow-md">
+              {/* <div className="absolute -bottom-2 -right-2 z-20 flex h-[44px] w-[44px] items-center justify-center rounded-full border-2 border-white bg-[#E91E8C] text-white shadow-md">
                 <span className="text-[18px] font-bold">J</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
