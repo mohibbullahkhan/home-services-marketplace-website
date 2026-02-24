@@ -78,9 +78,9 @@ const FAQSection = () => {
                     {/* Header Row */}
                     <button
                       onClick={() => toggleAccordion(faq.id)}
-                      className="flex w-full items-start justify-between text-left focus:outline-none "
+                      className="flex w-full items-start justify-between text-left focus:outline-none cursor-pointer"
                     >
-                      <span className={`text-[16px] font-[700] leading-[1.4] pr-4 transition-colors cursor-pointer ${
+                      <span className={`text-[16px] font-[700] leading-[1.4] pr-4 transition-colors  ${
                         isOpen ? 'text-[#1A1A1A]' : 'text-[#1A1A1A]'
                       }`}>
                         {faq.question}

@@ -14,7 +14,8 @@ const BundleOfferSection = () => {
     location: 'Street Springfield, IL 62704',
     rate: 'Standard rates est.',
     discount: '5-10% off',
-    avatar: `/bundleOffer1.png`,
+    avatar1: `/bundleOffer1.png`,
+    avatar2: `/bundleOffer2.png`,
   }));
 
   return (
@@ -56,14 +57,42 @@ const BundleOfferSection = () => {
                     {item.published}
                   </p>
                 </div>
-                <div className="relative h-[48px] w-[48px] overflow-hidden rounded-full border-2 border-[#E5E7EB]">
+                {/* <div className="relative h-[48px] w-[48px] overflow-hidden rounded-full border-2 border-[#E5E7EB]">
                   <Image
                     src={item.avatar}
                     alt="User avatar"
                     fill
                     className="object-cover"
                   />
-                </div>
+                </div> */}
+                {/* STACKED AVATARS - Exact Match */}
+<div className="flex items-center">
+  <div className="relative flex -space-x-4">
+    {/* First Avatar (Left) */}
+    <div className="relative h-[44px] w-[44px] overflow-hidden rounded-full border-[2px] border-[#1A73E8] bg-white p-[1.5px]">
+      <div className="relative h-full w-full overflow-hidden rounded-full border-[2px] border-white">
+        <Image
+          src={item.avatar1}
+          alt="User 1"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+    
+    {/* Second Avatar (Right) */}
+    <div className="relative h-[44px] w-[44px] overflow-hidden rounded-full border-[2px] border-[#1A73E8] bg-white p-[1.5px]">
+      <div className="relative h-full w-full overflow-hidden rounded-full border-[2px] border-white">
+        <Image
+          src={item.avatar2}
+          alt="User 2"
+          fill
+          className="object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</div>
               </div>
 
               {/* MIDDLE CONTENT */}
@@ -83,7 +112,7 @@ const BundleOfferSection = () => {
               </div>
 
               {/* BOTTOM ROW */}
-              <div className="mt-4 pt-3 flex items-center justify-between border-t border-[#F3F4F6]">
+              <div className="mt-4 pt-3 flex items-center justify-between ">
                 <div>
                   <p className="text-[13px] font-[600] text-[#1A1A1A]">
                     {item.rate}
