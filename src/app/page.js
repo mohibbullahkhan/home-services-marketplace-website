@@ -1,3 +1,4 @@
+import AppDownloadSection from "@/components/sections/AppDownloadSection";
 import BundleOfferSection from "@/components/sections/BundleOfferSection";
 import FAQSection from "@/components/sections/FAQSection";
 import HeroSection from "@/components/sections/HeroSection";
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorksSection></HowItWorksSection>
       <ReviewsSection></ReviewsSection>
       <FAQSection></FAQSection>
+      <AppDownloadSection></AppDownloadSection>
       </div>
   );
 }
