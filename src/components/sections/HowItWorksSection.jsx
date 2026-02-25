@@ -37,7 +37,7 @@ const HowItWorksSection = () => {
           
           {/* LEFT COLUMN: Image with Badge Overlay */}
           <div className="relative w-full max-w-[420px] lg:w-[45%]">
-            <div className="relative aspect-square w-full overflow-hidden rounded-[24px] shadow-sm">
+            <div className="relative aspect-square w-full overflow-hidden rounded-[24px] ">
               <Image
                 src="/howitworks.png"
                 alt="Professional technician"
