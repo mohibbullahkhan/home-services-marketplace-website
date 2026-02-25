@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
                 src="/howitworks.png"
                 alt="Professional technician"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
 
